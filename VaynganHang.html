@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi vay</title>
+</head>
+<body>
+    <p>Nhập số tiền vay:</p>
+    <input type="number" id="sotien">
+    <p>Nhập số năm vay:</p>
+    <input type="number" id="sonamvay">
+    <button onclick="tinhLai()">Tính lãi</button>
+    <p id="ketqua"></p>
+    
+    <script>
+        function tinhLai() {
+            let sotien = document.getElementById("sotien").value;
+            let sonam = document.getElementById("sonamvay").value;
+            let lai = sotien * 0.05 * sonam;
+            let tongtien = parseFloat(sotien) + lai;
+            document.getElementById("ketqua").innerHTML = "Lãi: " + lai + " VNĐ<br>Tổng tiền: " + tongtien + " VNĐ";
+        }
+    </script>
+</body>
+</html>
