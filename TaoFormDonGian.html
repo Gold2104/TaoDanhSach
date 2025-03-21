@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>ĐĂNG KÝ HỌC VIÊN</title>
+  <style>
+    body {
+      background-color: #FFFFCC;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      background-color: #FFFF99;
+      padding: 10px;
+      font-size: 18px;
+    }
+    th {
+      background-color: #CCFFCC;
+      font-size: 24px;
+      color: blue;
+      padding: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+      font-size: 16px;
+      width: 300px;
+    }
+    textarea {
+      resize: none;
+    }
+    input[type="submit"], input[type="reset"] {
+      font-size: 16px;
+      padding: 5px 15px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post">
+    <table border="0" cellpadding="8" cellspacing="0">
+      <tr>
+        <th colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+      </tr>
+      <tr>
+        <td>Họ và tên</td>
+        <td><input type="text" name="yourname"></td>
+      </tr>
+      <tr>
+        <td>Ngày sinh</td>
+        <td><input type="date" name="dob"></td>
+      </tr>
+      <tr>
+        <td>Giới tính</td>
+        <td>
+          <input type="radio" name="gender" value="Nam"> Nam
+          <input type="radio" name="gender" value="Nữ"> Nữ
+        </td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td><textarea name="address" rows="3" cols="33"></textarea></td>
+      </tr>
+      <tr>
+        <td>Lớp</td>
+        <td>
+          <select name="class">
+            <option value="">— Chọn lớp —</option>
+            <option value="A">Lớp A</option>
+            <option value="B">Lớp B</option>
+            <option value="C">Lớp C</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Điện thoại</td>
+        <td><input type="tel" name="phone"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Đăng ký">
+          <input type="reset" value="Nhập lại">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
